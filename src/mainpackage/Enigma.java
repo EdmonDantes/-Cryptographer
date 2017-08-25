@@ -253,474 +253,451 @@ public final class Enigma {
 	}
 	
 	private static char getChar(int id){
-		switch (id){
-			default:return'↓';
-			case 1:return' ';
-			case 2:return'.';
-			case 3:return',';
-			case 4:return'-';
-			case 5:return'?';
-			case 6:return'!';
-			case 7:return':';
-			case 8:return';';
-			case 9:return'\'';
-			case 10:return'\"';
-			case 11:return'A';
-			case 12:return'a';
-			case 13:return'B';
-			case 14:return'b';
-			case 15:return'C';
-			case 16:return'c';
-			case 17:return'D';
-			case 18:return'd';
-			case 19:return'E';
-			case 20:return'e';
-			case 21:return'F';
-			case 22:return'f';
-			case 23:return'G';
-			case 24:return'g';
-			case 25:return'H';
-			case 26:return'h';
-			case 27:return'I';
-			case 28:return'i';
-			case 29:return'J';
-			case 30:return'j';
-			case 31:return'K';
-			case 32:return'k';
-			case 33:return'L';
-			case 34:return'l';
-			case 35:return'M';
-			case 36:return'm';
-			case 37:return'N';
-			case 38:return'n';
-			case 39:return'O';
-			case 40:return'o';
-			case 41:return'P';
-			case 42:return'p';
-			case 43:return'Q';
-			case 44:return'q';
-			case 45:return'R';
-			case 46:return'r';
-			case 47:return'S';
-			case 48:return's';
-			case 49:return'T';
-			case 50:return't';
-			case 51:return'U';
-			case 52:return'u';
-			case 53:return'V';
-			case 54:return'v';
-			case 55:return'W';
-			case 56:return'w';
-			case 57:return'X';
-			case 58:return'x';
-			case 59:return'Y';
-			case 60:return'y';
-			case 61:return'Z';
-			case 62:return'z';
-			case 63:return'А';
-			case 64:return'а';
-			case  65:return'Б';
-			case  66:return'б';
-			case 67 :return'В';
-			case 68 :return'в';
-			case 69 :return'Г';
-			case 70 :return'г';
-			case 71 :return'Д';
-			case 72 :return'д';
-			case 73 :return'Е';
-			case 74 :return'е';
-			case 75 :return'Ё';
-			case 76:return'ё';
-			case 77 :return'Ж';
-			case 78 :return'ж';
-			case 79 :return'З';
-			case 80 :return'з';
-			case 81 :return'И';
-			case 82 :return'и';
-			case 83 :return'Й';
-			case 84 :return'й';
-			case 85 :return'К';
-			case 86 :return'к';
-			case 87 :return'Л';
-			case 88 :return'л';
-			case 89 :return'М';
-			case 90 :return'м';
-			case 91 :return'Н';
-			case 92 :return'н';
-			case 93 :return'О';
-			case 94 :return'о';
-			case 95 :return'П';
-			case 96 :return'п';
-			case 97 :return'Р';
-			case 98 :return'р';
-			case 99 :return'С';
-			case 100 :return'с';
-			case 101 :return'Т';
-			case 102 :return'т';
-			case 103 :return'У';
-			case 104 :return'у';
-			case 105 :return'Ф';
-			case 106 :return'ф';
-			case 107 :return'Х';
-			case 108 :return'х';
-			case 109 :return'Ц';
-			case 110 :return'ц';
-			case 111 :return'Ч';
-			case 112 :return'ч';
-			case 113 :return'Ш';
-			case 114 :return'ш';
-			case 115 :return'Щ';
-			case 116 :return'щ';
-			case 117 :return'Ъ';
-			case 118 :return'ъ';
-			case 119 :return'Ы';
-			case 120 :return'ы';
-			case 121 :return'Ь';
-			case 122 :return'ь';
-			case 123 :return'Э';
-			case 124 :return'э';
-			case 125 :return'Ю';
-			case 126 :return'ю';
-			case 127 :return'Я';
-			case 128 :return'я';
-			case 129 :return'0';
-			case 130 :return'1';
-			case 131 :return'2';
-			case 132 :return'3';
-			case 133 :return'4';
-			case 134 :return'5';
-			case 135 :return'6';
-			case 136 :return'7';
-			case 137 :return'8';
-			case 138 :return'9';
-			case 139 :return'\\';
-			case 140 :return'/';
-			case 141 :return'|';
-			case 142 :return'+';
-			case 143 :return'@';
-			case 144 :return'%';
-			case 145 :return'^';
-			case 146 :return'&';
-			case 147 :return'*';
-			case 148 :return'=';
-			case 149 :return'È';
-			case 150 :return'è';
-			case 151 :return'É';
-			case 152 :return'é';
-			case 153: return'Ê';
-			case 154: return'ê';
-			case 155: return'Ç';
-			case 156: return'ç';
-			case 157:return'À';
-			case 158:return'à';
-			case 159:return'Á';
-			case 160:return'á';
-			case 161:return'Â';
-			case 162:return'â';
-			case 163:return'Ä';
-			case 164:return'ä';
-			case 165:return'Ò';
-			case 166:return'ò';
-			case 167:return'Ó';
-			case 168:return'ó';
-			case 169:return'Ô';
-			case 170:return'ô';
-			case 171:return'Ö';
-			case 172:return'ö';
-			case 173:return'Ø';
-			case 174:return'ø';
-			case 175:return'#';
-			case 176:return'№';
-			case 177:return'Ù';
-			case 178:return'ù';
-			case 179:return'Ú';
-			case 180:return'ú';
-			case 181:return'Û';
-			case 182:return'û';
-			case 183:return'Ü';
-			case 184:return'ü';
-			case 185:return'Ć';
-			case 186:return'ć';
-			case 187:return'Ĉ';
-			case 188:return'ĉ';
+		switch(id){
+		default:return'■';
+		case 1 : return' ';
+		case 2 : return'.';
+		case 3 : return',';
+		case 4 : return'-';
+		case 5 : return'+';
+		case 6 : return'?';
+		case 7 : return'!';
+		case 8 : return':';
+		case 9 : return';';
+		case 10 : return'<';
+		case 11 : return'>';
+		case 12 : return'/';
+		case 13 : return'\\';
+		case 14 : return'\'';
+		case 15 : return'\"';
+		case 16 : return'[';
+		case 17 : return']';
+		case 18 : return'{';
+		case 19 : return'}';
+		case 20 : return'|';
+		case 21 : return'@';
+		case 22 : return'#';
+		case 23 : return'№';
+		case 24 : return'$';
+		case 25 : return'%';
+		case 26 : return'^';
+		case 27 : return'&';
+		case 28 : return'*';
+		case 29 : return'(';
+		case 30 : return')';
+		case 31 : return'=';
+		case 32 : return'A';
+		case 33 : return'a';
+		case 34 : return'B';
+		case 35 : return'b';
+		case 36 : return'C';
+		case 37 : return'c';
+		case 38 : return'D';
+		case 39 : return'd';
+		case 40 : return'E';
+		case 41 : return'e';
+		case 42 : return'F';
+		case 43 : return'f';
+		case 44 : return'G';
+		case 45 : return'g';
+		case 46 : return'H';
+		case 47 : return'h';
+		case 48 : return'I';
+		case 49 : return'i';
+		case 50 : return'J';
+		case 51 : return'j';
+		case 52 : return'K';
+		case 53 : return'k';
+		case 54 : return'L';
+		case 55 : return'l';
+		case 56 : return'M';
+		case 57 : return'm';
+		case 58 : return'N';
+		case 59 : return'n';
+		case 60 : return'O';
+		case 61 : return'o';
+		case 62 : return'P';
+		case 63 : return'p';
+		case 64 : return'Q';
+		case 65 : return'q';
+		case 66 : return'R';
+		case 67 : return'r';
+		case 68 : return'S';
+		case 69 : return's';
+		case 70 : return'T';
+		case 71 : return't';
+		case 72 : return'U';
+		case 73 : return'u';
+		case 74 : return'V';
+		case 75 : return'v';
+		case 76 : return'W';
+		case 77 : return'w';
+		case 78 : return'X';
+		case 79 : return'x';
+		case 80 : return'Y';
+		case 81 : return'y';
+		case 82 : return'Z';
+		case 83 : return'z';
+		case 84 : return'А';
+		case 85 : return'а';
+		case 86 : return'Б';
+		case 87 : return'б';
+		case 88 : return'В';
+		case 89 : return'в';
+		case 90 : return'Г';
+		case 91 : return'г';
+		case 92 : return'Д';
+		case 93 : return'д';
+		case 94 : return'Е';
+		case 95 : return'е';
+		case 96 : return'Ё';
+		case 97 : return'ё';
+		case 98 : return'Ж';
+		case 99 : return'ж';
+		case 100 : return'З';
+		case 101 : return'з';
+		case 102 : return'И';
+		case 103 : return'и';
+		case 104 : return'Й';
+		case 105 : return'й';
+		case 106 : return'К';
+		case 107 : return'к';
+		case 108 : return'Л';
+		case 109 : return'л';
+		case 110 : return'М';
+		case 111 : return'м';
+		case 112 : return'Н';
+		case 113 : return'н';
+		case 114 : return'О';
+		case 115 : return'о';
+		case 116 : return'П';
+		case 117 : return'п';
+		case 118 : return'Р';
+		case 119 : return'р';
+		case 120 : return'С';
+		case 121 : return'с';
+		case 122 : return'Т';
+		case 123 : return'т';
+		case 124 : return'У';
+		case 125 : return'у';
+		case 126 : return'Ф';
+		case 127 : return'ф';
+		case 128 : return'Х';
+		case 129 : return'х';
+		case 130 : return'Ц';
+		case 131 : return'ц';
+		case 132 : return'Ч';
+		case 133 : return'ч';
+		case 134 : return'Ш';
+		case 135 : return'ш';
+		case 136 : return'Щ';
+		case 137 : return'щ';
+		case 138 : return'Ъ';
+		case 139 : return'ъ';
+		case 140 : return'Ы';
+		case 141 : return'ы';
+		case 142 : return'Ь';
+		case 143 : return'ь';
+		case 144 : return'Э';
+		case 145 : return'э';
+		case 146 : return'Ю';
+		case 147 : return'ю';
+		case 148 : return'Я';
+		case 149 : return'я';
+		case 150 : return'0';
+		case 151 : return'1';
+		case 152 : return'2';
+		case 153 : return'3';
+		case 154 : return'4';
+		case 155 : return'5';
+		case 156 : return'6';
+		case 157 : return'7';
+		case 158 : return'8';
+		case 159 : return'9';
+		case 160 : return'È';
+		case 161 : return'è';
+		case 162 : return'É';
+		case 163 : return'é';
+		case 164 : return'Ê';
+		case 165 : return'ê';
+		case 166 : return'Ç';
+		case 167 : return'ç';
+		case 168 : return'À';
+		case 169 : return'à';
+		case 170 : return'Á';
+		case 171 : return'á';
+		case 172 : return'Â';
+		case 173 : return'â';
+		case 174 : return'Ä';
+		case 175 : return'ä';
+		case 176 : return'Ò';
+		case 177 : return'ò';
+		case 178 : return'Ó';
+		case 179 : return'ó';
+		case 180 : return'Ô';
+		case 181 : return'ô';
+		case 182 : return'Ö';
+		case 183 : return'ö';
+		case 184 : return'Ø';
+		case 185 : return'ø';
+		case 186 : return'Ù';
+		case 187 : return'ù';
+		case 188 : return'Ú';
+		case 189 : return'ú';
+		case 190 : return'Û';
+		case 191 : return'û';
+		case 192 : return'Ü';
+		case 193 : return'ü';
+		case 194 : return'Ć';
+		case 195 : return'ć';
+		case 196 : return'Ĉ';
+		case 197 : return'ĉ';
 		}
-	}
+}
 	
 	private static int getId(char a){
 		switch (a){
-			default:return 0;
-			case ' ': return 1;
-			case '.':return 2;
-			case ',':return 3;
-			case '-':return 4;
-			case '?':return 5;
-			case '!':return 6;
-			case ':':return 7;
-			case ';':return 8;
-			case '\'':return 9;
-			case '\"':return 10;
-			case 'A':return 11;
-			case 'a':return 12;
-			case 'B':return 13; 
-			case 'b':return 14;
-			case 'C':return 15;
-			case 'c':return 16;
-			case 'D':return 17;
-			case 'd':return 18;
-			case 'E':return 19;
-			case 'e':return 20;
-			case 'F':return 21;
-			case 'f':return 22;
-			case 'G':return 23;
-			case 'g':return 24;
-			case 'H':return 25;
-			case 'h':return 26;
-			case 'I':return 27;
-			case 'i':return 28;
-			case 'J':return 29;
-			case 'j':return 30;
-			case 'K':return 31;
-			case 'k':return 32;
-			case 'L':return 33;
-			case 'l':return 34;
-			case 'M':return 35;
-			case 'm':return 36;
-			case 'N':return 37;
-			case 'n':return 38;
-			case 'O':return 39;
-			case 'o':return 40;
-			case 'P':return 41;
-			case 'p':return 42;
-			case 'Q':return 43;
-			case 'q':return 44;
-			case 'R':return 45;
-			case 'r':return 46;
-			case 'S':return 47;
-			case 's':return 48;
-			case 'T':return 49;
-			case 't':return 50;
-			case 'U':return 51;
-			case 'u':return 52;
-			case 'V':return 53;
-			case 'v':return 54;
-			case 'W':return 55;
-			case 'w':return 56;
-			case 'X':return 57;
-			case 'x':return 58;
-			case 'Y':return 59;
-			case 'y':return 60;
-			case 'Z':return 61;
-			case 'z':return 62;
-			case 'А':return 63;
-			case 'а':return 64;
-			case 'Б':return 65;
-			case 'б':return 66;
-			case 'В':return 67;
-			case 'в':return 68;
-			case 'Г':return 69;
-			case 'г':return 70;
-			case 'Д':return 71;
-			case 'д':return 72;
-			case 'Е':return 73;
-			case 'е':return 74;
-			case 'Ё':return 75;
-			case 'ё':return 76;
-			case 'Ж':return 77;
-			case 'ж':return 78;
-			case 'З':return 79;
-			case 'з':return 80;
-			case 'И':return 81;
-			case 'и':return 82;
-			case 'Й':return 83;
-			case 'й':return 84;
-			case 'К':return 85;
-			case 'к':return 86;
-			case 'Л':return 87;
-			case 'л':return 88;
-			case 'М':return 89;
-			case 'м':return 90;
-			case 'Н':return 91;
-			case 'н':return 92;
-			case 'О':return 93;
-			case 'о':return 94;
-			case 'П':return 95;
-			case 'п':return 96;
-			case 'Р':return 97;
-			case 'р':return 98;
-			case 'С':return 99;
-			case 'с':return 100;
-			case 'Т':return 101;
-			case 'т':return 102;
-			case 'У':return 103;
-			case 'у':return 104;
-			case 'Ф':return 105;
-			case 'ф':return 106;
-			case 'Х':return 107;
-			case 'х':return 108;
-			case 'Ц':return 109;
-			case 'ц':return 110;
-			case 'Ч':return 111;
-			case 'ч':return 112;
-			case 'Ш':return 113;
-			case 'ш':return 114;
-			case 'Щ':return 115;
-			case 'щ':return 116;
-			case 'Ъ':return 117;
-			case 'ъ':return 118;
-			case 'Ы':return 119;
-			case 'ы':return 120;
-			case 'Ь':return 121;
-			case 'ь':return 122;
-			case 'Э':return 123;
-			case 'э':return 124;
-			case 'Ю':return 125;
-			case 'ю':return 126;
-			case 'Я':return 127;
-			case 'я':return 128;
-			case '0':return 129;
-			case '1':return 130;
-			case '2':return 131;
-			case '3':return 132;
-			case '4':return 133;
-			case '5':return 134;
-			case '6':return 135;
-			case '7':return 136;
-			case '8':return 137;
-			case '9':return 138;
-			case '\\':return 139;
-			case '/':return 140;
-			case '|':return 141;
-			case '+':return 142;
-			case '@':return 143;
-			case '%':return 144;
-			case '^':return 145;
-			case '&':return 146;
-			case '*':return 147;
-			case '=':return 148;
-			case 'È':return 149;
-			case 'è':return 150;
-			case 'É':return 151;
-			case 'é':return 152;
-			case 'Ê':return 153;
-			case 'ê':return 154;
-			case 'Ç':return 155;
-			case 'ç':return 156;
-			case 'À':return 157;
-			case 'à':return 158;
-			case 'Á':return 159;
-			case 'á':return 160;
-			case 'Â':return 161;
-			case 'â':return 162;
-			case 'Ä':return 163;
-			case 'ä':return 164;
-			case 'Ò':return 165;
-			case 'ò':return 166;
-			case 'Ó':return 167;
-			case 'ó':return 168;
-			case 'Ô':return 169;
-			case 'ô':return 170;
-			case 'Ö':return 171;
-			case 'ö':return 172;
-			case 'Ø':return 173;
-			case 'ø':return 174;
-			case '#':return 175;
-			case '№':return 176;
-			case 'Ù':return 177;
-			case 'ù':return 178;
-			case 'Ú':return 179;
-			case 'ú':return 180;
-			case 'Û':return 181;
-			case 'û':return 181;
-			case 'Ü':return 181;
-			case 'ü':return 181;
-			case 'Ć':return 181;
-			case 'ć':return 181;
-			case 'Ĉ':return 181;
-			case 'ĉ':return 181;
-		}
-	}
+		default:return 0;
+		case ' ':return 1;
+		case '.':return 2;
+		case ',':return 3;
+		case '-':return 4;
+		case '+':return 5;
+		case '?':return 6;
+		case '!':return 7;
+		case ':':return 8;
+		case ';':return 9;
+		case '<':return 10;
+		case '>':return 11;
+		case '/':return 12;
+		case '\\':return 13;
+		case '\'':return 14;
+		case '\"':return 15;
+		case '[':return 16;
+		case ']':return 17;
+		case '{':return 18;
+		case '}':return 19;
+		case '|':return 20;
+		case '@':return 21;
+		case '#':return 22;
+		case '№':return 23;
+		case '$':return 24;
+		case '%':return 25;
+		case '^':return 26;
+		case '&':return 27;
+		case '*':return 28;
+		case '(':return 29;
+		case ')':return 30;
+		case '=':return 31;
+		case 'A':return 32;
+		case 'a':return 33;
+		case 'B':return 34;
+		case 'b':return 35;
+		case 'C':return 36;
+		case 'c':return 37;
+		case 'D':return 38;
+		case 'd':return 39;
+		case 'E':return 40;
+		case 'e':return 41;
+		case 'F':return 42;
+		case 'f':return 43;
+		case 'G':return 44;
+		case 'g':return 45;
+		case 'H':return 46;
+		case 'h':return 47;
+		case 'I':return 48;
+		case 'i':return 49;
+		case 'J':return 50;
+		case 'j':return 51;
+		case 'K':return 52;
+		case 'k':return 53;
+		case 'L':return 54;
+		case 'l':return 55;
+		case 'M':return 56;
+		case 'm':return 57;
+		case 'N':return 58;
+		case 'n':return 59;
+		case 'O':return 60;
+		case 'o':return 61;
+		case 'P':return 62;
+		case 'p':return 63;
+		case 'Q':return 64;
+		case 'q':return 65;
+		case 'R':return 66;
+		case 'r':return 67;
+		case 'S':return 68;
+		case 's':return 69;
+		case 'T':return 70;
+		case 't':return 71;
+		case 'U':return 72;
+		case 'u':return 73;
+		case 'V':return 74;
+		case 'v':return 75;
+		case 'W':return 76;
+		case 'w':return 77;
+		case 'X':return 78;
+		case 'x':return 79;
+		case 'Y':return 80;
+		case 'y':return 81;
+		case 'Z':return 82;
+		case 'z':return 83;
+		case 'А':return 84;
+		case 'а':return 85;
+		case 'Б':return 86;
+		case 'б':return 87;
+		case 'В':return 88;
+		case 'в':return 89;
+		case 'Г':return 90;
+		case 'г':return 91;
+		case 'Д':return 92;
+		case 'д':return 93;
+		case 'Е':return 94;
+		case 'е':return 95;
+		case 'Ё':return 96;
+		case 'ё':return 97;
+		case 'Ж':return 98;
+		case 'ж':return 99;
+		case 'З':return 100;
+		case 'з':return 101;
+		case 'И':return 102;
+		case 'и':return 103;
+		case 'Й':return 104;
+		case 'й':return 105;
+		case 'К':return 106;
+		case 'к':return 107;
+		case 'Л':return 108;
+		case 'л':return 109;
+		case 'М':return 110;
+		case 'м':return 111;
+		case 'Н':return 112;
+		case 'н':return 113;
+		case 'О':return 114;
+		case 'о':return 115;
+		case 'П':return 116;
+		case 'п':return 117;
+		case 'Р':return 118;
+		case 'р':return 119;
+		case 'С':return 120;
+		case 'с':return 121;
+		case 'Т':return 122;
+		case 'т':return 123;
+		case 'У':return 124;
+		case 'у':return 125;
+		case 'Ф':return 126;
+		case 'ф':return 127;
+		case 'Х':return 128;
+		case 'х':return 129;
+		case 'Ц':return 130;
+		case 'ц':return 131;
+		case 'Ч':return 132;
+		case 'ч':return 133;
+		case 'Ш':return 134;
+		case 'ш':return 135;
+		case 'Щ':return 136;
+		case 'щ':return 137;
+		case 'Ъ':return 138;
+		case 'ъ':return 139;
+		case 'Ы':return 140;
+		case 'ы':return 141;
+		case 'Ь':return 142;
+		case 'ь':return 143;
+		case 'Э':return 144;
+		case 'э':return 145;
+		case 'Ю':return 146;
+		case 'ю':return 147;
+		case 'Я':return 148;
+		case 'я':return 149;
+		case '0':return 150;
+		case '1':return 151;
+		case '2':return 152;
+		case '3':return 153;
+		case '4':return 154;
+		case '5':return 155;
+		case '6':return 156;
+		case '7':return 157;
+		case '8':return 158;
+		case '9':return 159;
+		case 'È':return 160;
+		case 'è':return 161;
+		case 'É':return 162;
+		case 'é':return 163;
+		case 'Ê':return 164;
+		case 'ê':return 165;
+		case 'Ç':return 166;
+		case 'ç':return 167;
+		case 'À':return 168;
+		case 'à':return 169;
+		case 'Á':return 170;
+		case 'á':return 171;
+		case 'Â':return 172;
+		case 'â':return 173;
+		case 'Ä':return 174;
+		case 'ä':return 175;
+		case 'Ò':return 176;
+		case 'ò':return 177;
+		case 'Ó':return 178;
+		case 'ó':return 179;
+		case 'Ô':return 180;
+		case 'ô':return 181;
+		case 'Ö':return 182;
+		case 'ö':return 183;
+		case 'Ø':return 184;
+		case 'ø':return 185;
+		case 'Ù':return 186;
+		case 'ù':return 187;
+		case 'Ú':return 188;
+		case 'ú':return 189;
+		case 'Û':return 190;
+		case 'û':return 191;
+		case 'Ü':return 192;
+		case 'ü':return 193;
+		case 'Ć':return 194;
+		case 'ć':return 195;
+		case 'Ĉ':return 196;
+		case 'ĉ':return 197;
+			}
+}
 	
-	private final static int[] r1 = new int[]{8,7,9,1,4,2,5,6,3,10,20,19,32,31,36,35,22,21,34,33,24,23,
-			18,17,44,43,54,53,62,61,38,37,50,49,40,39,56,55,60,59,
-			26,25,58,57,52,51,48,47,42,41,12,11,28,27,14,13,46,45,
-			16,15,30,29,
-			//Русские буквы
-			63,123,135,85,96,94,134,79,68,69,133,77,71,137,105,88,129,64,101,102,65,73,112,127,114,76,124,125,75,97,67,132,83,110,100,119,66,84,130,109,70,126,74,82,122,72,93,95,128,104,138,116,92,136,118,111,78,117,120,80,113,108,86,89,87,91,98,106,115,107,90,131,121,81,99,103,
-			172,151,161,177,165,141,159,143,150,176,146,166,144,155,157,164,169,148,171,158,180,152,170,167,173,154,175,145,139,147,179,142,156,140,149,162,168,153,174,163,160,178,
-	
-	};
-	private final static int[] r2 = new int[]{9,7,3,1,10,5,4,2,6,8,12,11,30,29,18,17,32,31,48,47,27,28,
-			46,45,52,51,58,57,14,13,34,33,26,25,56,55,50,49,36,35,
-			16,15,44,43,24,23,62,61,38,37,42,41,60,59,22,21,54,53,
-			40,39,20,19,
-			80,67,131,72,114,75,76,138,91,111,105,100,101,73,102,103,86,113,99,124,120,127,79,68,66,133,90,115,134,122,108,109,84,65,95,130,112,81,77,69,125,88,135,70,132,126,96,93,97,107,106,74,82,94,110,119,89,121,85,129,78,92,117,118,116,136,83,87,137,71,63,104,123,64,128,98,
-			158,153,174,167,140,155,172,161,160,173,150,141,169,164,139,180,146,149,175,168,170,163,154,162,178,144,145,142,152,151,148,147,165,171,156,179,143,177,166,157,159,176,
-	};
-	private final static int[] r3 = new int[]{8,3,5,1,4,9,10,2,6,7,14,13,18,17,22,21,26,25,30,29,34,33,
-			16,15,42,41,46,45,50,49,58,57,54,53,62,61,38,37,60,59,
-			20,19,28,27,56,55,24,23,12,11,32,31,36,35,52,51,48,47,
-			44,43,40,39,
-			87,109,64,76,90,137,112,74,116,138,70,66,120,97,81,92,135,103,123,126,131,67,134,84,106,80,79,86,69,83,129,78,93,102,63,111,75,133,77,132,99,85,128,68,130,118,107,101,100,91,115,127,98,96,94,113,114,95,125,119,73,121,89,122,71,82,105,136,117,108,110,72,124,65,88,104,
-			168,155,143,170,174,147,161,140,159,178,146,169,149,139,165,158,154,157,160,153,175,145,163,150,148,173,172,162,180,176,156,164,144,152,166,171,177,167,141,179,151,142,
-	};
-	private final static int[] r4 = new int[]{6,10,5,8,2,7,9,3,4,1,20,19,48,47,40,39,54,53,42,41,62,61,
-			30,29,12,11,60,59,44,43,52,51,28,27,46,45,26,25,58,57,
-			34,33,38,37,22,21,50,49,24,23,32,31,18,17,16,15,36,35,
-			56,55,14,13,
-			118,117,91,128,79,87,124,131,74,95,80,115,78,68,126,76,99,138,85,105,70,94,127,104,90,134,103,83,130,66,116,100,71,86,63,120,81,133,72,109,113,106,93,125,123,77,92,136,88,114,84,67,112,82,107,132,110,97,98,137,111,75,119,102,121,89,64,101,73,135,65,122,69,96,129,108,
-			140,173,146,171,152,151,176,179,160,149,164,143,175,144,178,177,158,168,150,147,165,145,155,154,157,174,169,142,156,163,166,159,180,161,172,141,170,139,153,148,162,167,
-	};
-	
-	private final static int[] r5 = new int[]{8,6,3,9,4,10,7,1,5,2,53,54,61,62,13,14,45,46,23,24,27,28,
-			49,50,59,60,51,52,41,42,47,48,17,18,37,38,25,26,33,34,
-			57,58,11,12,55,56,35,36,29,30,43,44,39,40,21,22,19,20,
-			15,16,31,32,
-			110,135,80,77,69,91,134,106,97,117,74,101,122,103,102,87,84,107,109,137,72,112,76,93,99,111,127,70,121,88,75,116,105,114,67,95,66,71,125,89,73,133,83,98,96,138,78,113,132,64,94,92,115,86,119,120,81,79,100,68,65,128,85,123,90,118,82,124,130,131,108,136,126,63,129,104,
-			150,143,179,173,142,149,166,165,145,140,152,141,159,151,174,146,144,168,178,171,170,147,161,177,156,155,167,148,175,160,157,172,180,154,164,153,162,139,158,169,163,176,
-	};
-	
-	private final static int[] r6 = new int[]{9,3,10,2,6,7,5,8,4,1,29,30,41,42,23,24,53,54,39,40,51,52,
-			35,36,21,22,59,60,43,44,13,14,19,20,37,38,25,26,61,62,
-			45,46,17,18,31,32,11,12,47,48,57,58,33,34,27,28,15,16,
-			49,50,55,56,
-			97,115,77,138,110,132,119,121,67,85,133,91,137,103,122,81,71,136,86,90,114,135,63,126,128,120,70,109,72,82,96,80,111,76,117,89,101,124,130,116,64,113,84,68,125,105,79,99,100,69,94,83,118,127,123,108,74,129,75,131,66,134,102,95,65,92,93,98,73,78,104,107,87,106,112,88,
-			159,161,146,163,150,149,154,166,160,151,172,173,141,144,140,145,180,168,170,164,148,175,153,171,139,179,176,152,158,178,157,174,162,155,147,156,142,167,143,169,177,165,
-	};
-	
-	private final static int[] r7 = new int[]{7,4,6,1,2,9,3,10,8,5,37,38,61,62,29,30,25,26,23,24,45,46,
-			15,16,57,58,35,36,59,60,47,48,55,56,13,14,39,40,51,52,
-			21,22,11,12,27,28,53,54,33,34,41,42,19,20,31,32,43,44,
-			17,18,49,50,
-			94,88,107,92,123,91,72,65,71,124,114,73,115,86,132,122,131,84,137,90,112,102,103,136,120,118,82,100,74,80,127,70,98,125,109,134,63,101,96,104,129,87,111,77,130,79,121,113,97,76,95,69,83,99,89,85,119,116,117,110,126,67,93,68,138,81,108,128,105,75,78,135,64,106,66,133,
-			149,159,161,163,147,142,174,158,156,150,171,166,146,155,144,176,139,148,151,175,153,160,141,170,167,140,152,172,169,180,165,154,179,145,177,143,157,178,162,168,164,173,
-	};
-	
-	private final static int[] r8 = new int[]{2,4,5,9,8,7,6,10,1,3,21,22,31,32,43,44,25,26,49,50,33,34,
-			57,58,39,40,15,16,13,14,29,30,47,48,41,42,17,18,61,62,
-			45,46,11,12,35,36,19,20,55,56,37,38,27,28,51,52,59,60,
-			23,24,53,54,
-			69,113,87,88,95,97,121,108,123,74,76,133,84,98,125,85,65,96,114,72,83,68,117,75,120,127,80,105,109,100,77,67,102,137,79,112,111,82,99,136,138,94,78,71,119,106,128,131,104,107,66,124,90,70,115,110,63,126,86,118,134,130,103,116,122,81,93,64,101,91,129,73,135,92,132,89,
-			139,147,166,165,149,172,180,161,144,145,178,177,146,171,164,160,157,168,140,169,174,150,148,176,156,152,167,155,141,162,154,179,153,175,151,163,143,159,158,170,142,173,
-				
-	};
-	
-	private final static int[] r9 = new int[]{8,2,5,7,3,6,9,1,4,10,33,34,19,20,59,60,29,30,53,54,15,16,
-			37,38,27,28,57,58,55,56,41,42,13,14,43,44,35,36,17,18,
-			45,46,49,50,11,12,31,32,61,62,23,24,21,22,51,52,25,26,
-			39,40,47,48,
-			101,130,132,67,107,81,99,75,86,119,104,120,93,112,125,100,113,92,116,109,115,131,123,63,79,138,72,118,84,71,69,103,128,73,134,106,98,95,94,70,135,110,114,108,121,102,137,136,64,77,97,66,91,82,133,87,90,96,124,68,111,105,65,80,122,126,88,117,85,83,76,74,127,129,89,78,
-			154,175,153,179,160,143,167,163,146,180,170,172,139,162,140,178,148,164,147,156,157,159,144,145,168,173,142,174,161,177,150,176,158,152,155,171,169,166,149,165,141,151,
-	};
-	
-	private final static int[] r10 = new int[]{4,1,8,6,10,9,2,5,3,7,21,22,47,48,39,40,31,32,11,12,37,38,
-			51,52,19,20,45,46,25,26,35,36,13,14,49,50,27,28,59,60,
-			15,16,55,56,33,34,43,44,41,42,61,62,57,58,53,54,23,24,
-			29,30,17,18,
-			110,101,109,63,133,86,66,104,111,71,76,84,135,120,103,74,79,98,99,108,129,114,68,75,121,102,118,137,112,127,95,91,64,130,87,90,117,115,73,80,92,105,116,134,65,72,119,131,96,106,70,124,126,67,136,132,97,122,113,89,85,125,77,83,123,94,93,100,107,138,69,128,78,82,88,81,
-			175,142,152,167,166,178,164,145,169,141,177,176,144,151,165,170,149,153,139,156,146,160,162,158,171,159,140,179,155,157,168,150,163,161,143,172,180,147,154,173,174,148,
-	};
-	
-	
+	private final static int[] r1 = new int[]{29,1,14,3,6,21,8,10,7,26,15,11,12,24,20,16,27,2,28,30,23,4,5,13,22,18,19,9,31,25,17,
+			40,41,52,53,56,57,42,43,54,55,44,45,38,39,64,65,74,75,82,83,58,59,70,71,60,61,76,77,80,81,46,47,78,79,72,73,68,69,62,63,32,33,48,49,34,35,66,67,36,37,50,51,
+			109,164,161,186,172,150,191,106,146,145,116,157,118,167,114,88,142,177,154,103,133,113,125,107,121,195,170,153,166,173,86,94,140,105,171,117,181,132,152,189,130,174,138,123,131,99,165,156,96,180,149,136,84,127,101,115,196,112,184,129,169,89,155,176,183,108,147,143,151,179,139,190,194,197,91,126,178,134,192,87,193,159,102,135,148,90,187,97,110,124,92,119,162,85,104,168,137,163,188,185,182,100,120,93,175,122,98,128,111,141,158,160,144,95,
+			};
+			private final static int[] r2 = new int[]{30,9,4,20,14,18,6,15,1,29,10,19,25,13,31,12,7,24,5,3,11,21,23,17,22,2,26,27,28,16,8,
+			32,33,50,51,38,39,52,53,68,69,48,49,66,67,72,73,78,79,34,35,54,55,46,47,76,77,70,71,56,57,36,37,64,65,44,45,82,83,58,59,62,63,80,81,42,43,74,75,60,61,40,41,
+			87,84,176,174,114,117,162,129,164,179,182,118,194,181,142,116,148,166,125,154,167,160,161,133,175,107,85,101,109,90,190,122,178,156,100,110,168,172,145,165,108,123,103,91,187,163,173,143,127,88,140,113,121,115,144,98,136,189,86,195,138,105,135,111,171,93,155,153,180,146,106,131,102,97,89,152,94,95,104,159,147,132,196,149,120,130,151,134,170,169,177,186,188,183,158,192,124,119,185,141,126,193,137,150,197,139,96,191,112,184,128,157,99,92,
+			};
+			private final static int[] r3 = new int[]{14,4,6,26,1,27,21,17,22,25,8,19,9,24,29,28,31,7,15,11,18,30,5,2,12,13,23,10,20,3,16,
+			34,35,38,39,42,43,46,47,50,51,54,55,36,37,62,63,66,67,70,71,78,79,74,75,82,83,58,59,80,81,40,41,48,49,76,77,44,45,32,33,52,53,56,57,72,73,68,69,64,65,60,61,
+			130,88,90,113,121,174,89,92,96,187,112,146,169,98,137,86,95,132,170,161,173,160,100,140,159,134,93,114,91,180,197,126,94,117,149,135,102,108,194,109,85,138,192,190,107,195,158,151,166,125,87,142,116,144,152,155,191,99,118,127,128,120,139,154,179,111,175,115,165,122,110,106,178,147,145,184,196,97,123,103,131,84,167,104,189,168,150,136,129,101,183,141,119,105,182,181,185,163,188,157,171,186,176,172,148,156,193,133,177,124,143,153,164,162,
+			};
+			private final static int[] r4 = new int[]{23,22,9,14,18,27,15,19,12,2,7,3,24,13,20,28,10,17,6,4,16,25,21,8,1,30,26,5,29,11,31,
+			40,41,68,69,60,61,74,75,62,63,82,83,50,51,32,33,80,81,64,65,72,73,48,49,66,67,46,47,78,79,54,55,58,59,42,43,70,71,44,45,52,53,38,39,36,37,56,57,76,77,34,35,
+			112,192,186,184,138,85,179,98,92,126,119,130,142,153,100,182,158,168,87,128,97,188,177,178,146,121,189,135,96,162,172,147,194,137,197,145,88,134,132,173,84,99,106,140,165,107,156,161,104,118,103,195,180,108,117,175,127,116,193,102,160,114,171,111,163,191,154,94,174,105,143,101,185,91,93,86,152,110,148,155,144,170,115,176,125,190,139,133,129,122,159,113,157,187,169,109,141,120,181,150,196,167,123,131,90,166,183,89,164,149,124,136,151,95,
+			};
+			private final static int[] r5 = new int[]{3,9,15,30,22,16,24,18,13,19,4,10,31,26,8,20,28,11,7,17,27,1,2,25,21,23,6,12,29,14,5,
+			74,75,82,83,34,35,66,67,44,45,48,49,70,71,80,81,72,73,62,63,68,69,38,39,58,59,46,47,54,55,78,79,32,33,76,77,56,57,50,51,64,65,60,61,42,43,40,41,36,37,52,53,
+			99,135,174,171,188,141,93,143,182,177,101,150,166,87,103,132,89,123,158,159,151,172,109,197,124,169,97,137,95,92,162,142,148,147,193,180,105,136,94,161,91,160,168,126,130,98,111,106,86,167,170,154,133,153,116,165,146,117,102,138,120,88,173,195,192,152,90,129,179,110,176,108,85,157,149,181,113,127,189,164,178,190,84,119,96,184,134,118,186,185,112,100,144,175,187,121,128,155,122,104,139,107,191,196,194,125,140,183,145,131,156,115,163,114,
+			};
+			private final static int[] r6 = new int[]{10,15,22,16,29,27,4,17,3,25,7,23,8,21,2,24,31,6,13,20,11,26,9,18,1,28,12,30,14,5,19,
+			50,51,62,63,44,45,74,75,60,61,72,73,56,57,42,43,80,81,64,65,34,35,40,41,58,59,46,47,82,83,66,67,38,39,52,53,32,33,68,69,78,79,54,55,48,49,36,37,70,71,76,77,
+			191,192,101,119,175,114,127,152,85,145,151,121,171,88,138,173,133,115,86,147,169,125,157,180,159,185,108,107,158,95,187,184,181,161,154,148,118,124,140,155,94,178,116,139,164,89,102,197,123,146,196,176,174,144,136,113,168,110,98,129,143,194,96,153,172,183,128,87,120,137,150,91,104,112,90,165,163,130,141,131,99,135,162,177,149,132,193,170,126,160,122,188,195,84,117,182,186,179,92,166,156,167,111,103,106,142,93,134,109,97,190,189,100,105,
+			};
+			private final static int[] r7 = new int[]{14,26,13,11,31,7,24,22,21,3,8,23,27,9,17,28,5,25,20,2,29,30,10,16,18,12,19,4,1,15,6,
+			58,59,82,83,50,51,46,47,44,45,66,67,36,37,78,79,56,57,80,81,68,69,76,77,34,35,60,61,72,73,42,43,32,33,48,49,74,75,54,55,62,63,40,41,52,53,64,65,38,39,70,71,
+			142,103,149,162,99,191,148,163,185,195,153,155,122,109,176,150,119,172,106,189,102,120,132,131,179,154,87,84,139,186,123,188,101,133,94,192,160,167,169,182,143,194,144,190,86,166,165,116,118,91,178,126,168,156,164,177,175,111,110,105,152,141,88,183,180,121,138,174,157,145,107,187,100,125,136,95,108,124,93,113,96,130,193,89,114,135,137,158,196,112,146,171,129,147,181,128,117,151,161,173,170,98,97,92,134,85,90,184,115,104,127,159,140,197,
+			};
+			private final static int[] r8 = new int[]{24,26,30,2,22,11,3,5,25,28,31,15,20,13,4,6,21,1,12,14,7,17,8,29,23,18,27,19,16,9,10,
+			42,43,52,53,64,65,46,47,70,71,54,55,78,79,60,61,36,37,34,35,50,51,68,69,62,63,38,39,82,83,66,67,32,33,56,57,40,41,76,77,58,59,48,49,72,73,80,81,44,45,74,75,
+			96,156,123,94,120,162,91,112,87,89,165,171,93,151,174,135,155,136,133,127,186,134,126,181,99,189,132,141,142,118,175,117,119,163,154,177,196,86,101,179,139,115,85,92,114,149,148,153,116,167,105,138,150,128,173,144,109,113,88,103,176,166,98,90,180,137,146,107,130,187,143,172,131,140,192,152,84,147,122,104,191,183,184,125,168,121,145,164,160,182,195,197,161,97,193,185,100,159,129,190,106,194,169,108,95,157,110,111,170,124,158,102,188,178,
+			};
+			private final static int[] r9 = new int[]{21,12,4,15,27,11,28,6,7,17,16,2,23,25,24,5,8,13,18,30,3,29,31,22,10,19,20,14,9,1,26,
+			54,55,40,41,80,81,50,51,74,75,36,37,58,59,48,49,78,79,76,77,62,63,34,35,64,65,56,57,38,39,66,67,70,71,32,33,52,53,82,83,44,45,42,43,72,73,46,47,60,61,68,69,
+			167,174,130,109,114,122,136,124,149,188,93,144,134,123,117,179,108,97,118,112,110,196,171,159,106,105,181,189,156,115,87,147,99,163,151,129,154,101,133,197,111,194,183,177,145,113,138,166,146,165,172,100,102,185,127,84,116,182,187,126,168,192,98,103,120,162,121,119,178,86,141,186,125,89,153,150,88,160,139,137,158,131,152,195,143,175,173,191,169,157,170,90,107,92,184,180,140,148,85,95,96,155,164,91,142,176,135,190,104,94,193,128,161,132,
+			};
+			private final static int[] r10 = new int[]{22,31,16,6,8,20,28,2,11,21,9,14,25,26,17,7,1,19,24,13,23,10,29,18,27,3,15,4,30,5,12,
+			42,43,68,69,60,61,52,53,32,33,58,59,72,73,40,41,66,67,46,47,56,57,34,35,70,71,48,49,80,81,36,37,76,77,54,55,64,65,62,63,82,83,78,79,74,75,44,45,50,51,38,39,
+			164,94,130,182,90,118,89,129,86,188,119,124,139,112,103,145,157,142,179,85,136,152,148,166,194,122,131,186,195,146,134,138,184,117,109,110,187,121,177,180,171,87,126,181,156,159,95,140,153,92,116,113,154,193,160,135,183,172,162,192,176,174,150,144,104,190,96,165,128,97,123,137,141,161,197,114,127,111,125,105,163,106,168,167,120,115,100,99,155,151,196,149,108,101,88,132,170,98,107,173,178,191,147,169,84,102,133,143,189,185,158,93,175,91,
+			};
 	
 	
 	private static final int abs(int number){
@@ -733,8 +710,8 @@ public final class Enigma {
 	
 	private static final int getr1(int id,int rotor){
 		int local = abs(id + rotor);
-		while (local >= 180){
-			local -=179;
+		while (local >= 198){
+			local -=197;
 		}
 		return r1[local-1];
 	}
@@ -744,15 +721,15 @@ public final class Enigma {
 		local++;
 		local -= rotor;
 		while (local <= 0){
-			local += 179;
+			local += 197;
 		}
 		return local;
 	}
 	
 	private static final int getr2(int id,int rotor){
 		int local = abs(id + rotor);
-		while (local >= 180){
-			local -=179;
+		while (local >= 198){
+			local -=197;
 		}
 		return r2[local-1];
 	}
@@ -762,15 +739,15 @@ public final class Enigma {
 		local++;
 		local -= rotor;
 		while (local <= 0){
-			local += 179;
+			local += 197;
 		}
 		return local;
 	}
 	
 	private static final int getr3(int id,int rotor){
 		int local = abs(id + rotor);
-		while (local >= 180){
-			local -=179;
+		while (local >= 198){
+			local -=197;
 		}
 		return r3[local-1];
 	}
@@ -780,15 +757,15 @@ public final class Enigma {
 		local++;
 		local -= rotor;
 		while (local <= 0){
-			local += 179;
+			local += 197;
 		}
 		return local;
 	}
 	
 	private static final int getr4(int id,int rotor){
 		int local = abs(id + rotor);
-		while (local >= 180){
-			local -=179;
+		while (local >= 198){
+			local -=197;
 		}
 		return r4[local-1];
 	}
@@ -798,15 +775,15 @@ public final class Enigma {
 		local++;
 		local -= rotor;
 		while (local <= 0){
-			local += 179;
+			local += 197;
 		}
 		return local;
 	}
 	
 	private static final int getr5(int id,int rotor){
 		int local = abs(id + rotor);
-		while (local >= 180){
-			local -=179;
+		while (local >= 198){
+			local -=197;
 		}
 		return r5[local-1];
 	}
@@ -816,15 +793,15 @@ public final class Enigma {
 		local++;
 		local -= rotor;
 		while (local <= 0){
-			local += 179;
+			local += 197;
 		}
 		return local;
 	}
 	
 	private static final int getr6(int id,int rotor){
 		int local = abs(id + rotor);
-		while (local >= 180){
-			local -=179;
+		while (local >= 198){
+			local -=197;
 		}
 		return r6[local-1];
 	}
@@ -834,15 +811,15 @@ public final class Enigma {
 		local++;
 		local -= rotor;
 		while (local <= 0){
-			local += 179;
+			local += 197;
 		}
 		return local;
 	}
 	
 	private static final int getr7(int id,int rotor){
 		int local = abs(id + rotor);
-		while (local >= 180){
-			local -=179;
+		while (local >= 198){
+			local -=197;
 		}
 		return r7[local-1];
 	}
@@ -852,15 +829,15 @@ public final class Enigma {
 		local++;
 		local -= rotor;
 		while (local <= 0){
-			local += 179;
+			local += 197;
 		}
 		return local;
 	}
 	
 	private static final int getr8(int id,int rotor){
 		int local = abs(id + rotor);
-		while (local >= 180){
-			local -=179;
+		while (local >= 198){
+			local -=197;
 		}
 		return r8[local-1];
 	}
@@ -870,15 +847,15 @@ public final class Enigma {
 		local++;
 		local -= rotor;
 		while (local <= 0){
-			local += 179;
+			local += 197;
 		}
 		return local;
 	}
 	
 	private static final int getr9(int id,int rotor){
 		int local = abs(id + rotor);
-		while (local >= 180){
-			local -=179;
+		while (local >= 198){
+			local -=197;
 		}
 		return r9[local-1];
 	}
@@ -888,15 +865,15 @@ public final class Enigma {
 		local++;
 		local -= rotor;
 		while (local <= 0){
-			local += 179;
+			local += 197;
 		}
 		return local;
 	}
 	
 	private static final int getr10(int id,int rotor){
 		int local = abs(id + rotor);
-		while (local >= 180){
-			local -=179;
+		while (local >= 198){
+			local -=197;
 		}
 		return r10[local-1];
 	}
@@ -906,7 +883,7 @@ public final class Enigma {
 		local++;
 		local -= rotor;
 		while (local <= 0){
-			local += 179;
+			local += 197;
 		}
 		return local;
 	}
