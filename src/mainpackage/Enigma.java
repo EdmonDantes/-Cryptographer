@@ -219,7 +219,7 @@ public final class Enigma {
 		for (int i = 0;i<20;i++){
 			String local = "";
 			for (int j = 0;j<2;j++){
-				local += getChar(r.ints(11, 63).iterator().next());
+				local += getChar(r.ints(32, 84).iterator().next());
 			}
 			local += ";";
 		str += local;
